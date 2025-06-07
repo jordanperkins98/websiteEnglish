@@ -12,15 +12,15 @@ const nextConfig = {
   output: 'export',
   trailingSlash: true,
   skipTrailingSlashRedirect: true,
-  // Exclude API routes and admin pages from static export
-  exportPathMap: async function (
-    defaultPathMap,
-    { dev, dir, outDir, distDir, buildId }
-  ) {
+  // Only include the homepage for static export
+  exportPathMap: async function () {
     return {
       '/': { page: '/' },
-      // Add other static pages here if you have them
     }
+  },
+  // Disable server-side features
+  experimental: {
+    missingSuspenseWithCSRBailout: false,
   },
 }
 

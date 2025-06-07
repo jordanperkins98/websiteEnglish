@@ -10,6 +10,10 @@ import {
   validateSession 
 } from '@/lib/security'
 
+// Static export configuration
+export const dynamic = 'force-static'
+export const revalidate = false
+
 const CONTENT_FILE_PATH = path.join(process.cwd(), 'data', 'content.json')
 
 // Helper function to validate admin authentication

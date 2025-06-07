@@ -13,6 +13,10 @@ import {
   cleanupExpiredSessions
 } from '@/lib/security'
 
+// Static export configuration
+export const dynamic = 'force-static'
+export const revalidate = false
+
 export async function POST(request: NextRequest) {
   const clientIP = request.headers.get('x-forwarded-for') || 
                    request.headers.get('x-real-ip') || 

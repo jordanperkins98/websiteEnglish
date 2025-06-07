@@ -6,7 +6,11 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "export": "next build",
+    "deploy": "npm run export && gh-pages -d out",
+    "build:gh-pages": "npm run export && touch out/.nojekyll",
+    "build:static": "next build && touch out/.nojekyll && echo 'Static build ready for GitHub Pages'"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.9.1",

@@ -1,0 +1,8 @@
+# 🌐 GitHub Pages Branch - Minimal Ignore Rules
+
+# Only ignore essential files on gh-pages branch
+.DS_Store
+._*
+Thumbs.db
+
+# Keep everything else for static deployment
