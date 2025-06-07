@@ -30,10 +30,22 @@ echo "🔧 Building static site..."
 cp next.config.static.mjs next.config.mjs.backup
 cp next.config.static.mjs next.config.mjs
 
+# Temporarily move API and admin directories to avoid build issues
+echo "📦 Temporarily excluding server-side functionality..."
+mv app/api app/api.temp 2>/dev/null || true
+mv app/admin app/admin.temp 2>/dev/null || true
+
 # Build the static site
 npm run build:static
 
-if [ $? -ne 0 ]; then
+build_result=$?
+
+# Restore API and admin directories
+echo "🔄 Restoring server-side functionality..."
+mv app/api.temp app/api 2>/dev/null || true
+mv app/admin.temp app/admin 2>/dev/null || true
+
+if [ $build_result -ne 0 ]; then
     echo "❌ Build failed!"
     # Restore original config
     mv next.config.mjs.backup next.config.mjs

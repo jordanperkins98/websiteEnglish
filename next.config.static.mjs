@@ -12,16 +12,6 @@ const nextConfig = {
   output: 'export',
   trailingSlash: true,
   skipTrailingSlashRedirect: true,
-  // Only include the homepage for static export
-  exportPathMap: async function () {
-    return {
-      '/': { page: '/' },
-    }
-  },
-  // Disable server-side features
-  experimental: {
-    missingSuspenseWithCSRBailout: false,
-  },
 }
 
 export default nextConfig
