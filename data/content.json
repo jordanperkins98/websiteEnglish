@@ -1,0 +1,224 @@
+{
+  "hero": {
+    "title": "TEST UPDATE - 18:34:43",
+    "subtitle": "For UK Students",
+    "description": "Personalised GCSE, A-Level, and 11+ preparation with proven results. Join hundreds of successful UK students who've achieved their academic goals.",
+    "badgeText": "🇬🇧 UK Curriculum Specialist",
+    "ctaButton": "Book Free Consultation",
+    "secondaryButton": "View Our Services"
+  },
+  "about": {
+    "title": "About Word & Wonder",
+    "subtitle": "Your Partner in Academic Excellence",
+    "description": "With over 8 years of experience in UK education, I specialise in helping students excel in their GCSEs, A-Levels, and university applications. My approach combines proven teaching methods with personalised attention to each student's unique learning style.",
+    "experience": "8+ years of experience",
+    "qualifications": [
+      "MA in English Literature (Oxford University)",
+      "PGCE Secondary English (Cambridge University)",
+      "Qualified Teacher Status (QTS)",
+      "Level 3 Award in Education and Training",
+      "GCSE & A-Level Examiner (AQA Board)"
+    ],
+    "image": "/placeholder.jpg"
+  },
+  "services": [
+    {
+      "id": "gcse-a-level",
+      "icon": "BookOpen",
+      "title": "GCSE & A-Level Preparation",
+      "description": "Comprehensive support for English Literature and Language GCSEs and A-Levels with exam-focused strategies.",
+      "features": [
+        "Past paper practice and analysis",
+        "Essay writing techniques",
+        "Poetry and prose analysis",
+        "Exam technique and time management",
+        "Grade improvement guarantee"
+      ],
+      "image": "/placeholder.jpg",
+      "order": 1
+    },
+    {
+      "id": "university-application",
+      "icon": "Users",
+      "title": "University Application Support",
+      "description": "Expert guidance through UCAS applications, personal statements, and interview preparation.",
+      "features": [
+        "Personal statement writing",
+        "UCAS application guidance",
+        "Interview preparation",
+        "University selection advice",
+        "Scholarship application support"
+      ],
+      "image": "/placeholder.jpg",
+      "order": 2
+    },
+    {
+      "id": "entrance-exams",
+      "icon": "Clock",
+      "title": "11+ & 13+ Preparation",
+      "description": "Specialized coaching for independent school entrance examinations with proven success rates.",
+      "features": [
+        "Verbal and non-verbal reasoning",
+        "English comprehension and writing",
+        "Interview coaching",
+        "Mock exam practice",
+        "School-specific preparation"
+      ],
+      "image": "/placeholder.jpg",
+      "order": 3
+    }
+  ],
+  "pricing": {
+    "title": "Flexible Pricing Plans",
+    "subtitle": "Choose the package that works best for your learning goals and schedule",
+    "plans": [
+      {
+        "id": "individual",
+        "name": "Individual Lessons",
+        "price": "£50",
+        "duration": "hour",
+        "description": "One-to-one personalised tutoring",
+        "features": [
+          "Fully customised lesson plans",
+          "Flexible scheduling",
+          "Progress tracking",
+          "Exam-focused content",
+          "Study materials included"
+        ],
+        "isPopular": false,
+        "order": 1
+      },
+      {
+        "id": "package",
+        "name": "10-Lesson Package",
+        "price": "£45",
+        "duration": "hour",
+        "description": "Best value for regular students",
+        "features": [
+          "£5 per lesson savings",
+          "Priority booking",
+          "Free progress assessment",
+          "Homework support",
+          "Parent progress reports"
+        ],
+        "isPopular": true,
+        "order": 2
+      },
+      {
+        "id": "intensive",
+        "name": "Intensive Course",
+        "price": "£280",
+        "duration": "week",
+        "description": "Exam preparation bootcamp",
+        "features": [
+          "Daily 2-hour sessions",
+          "Mock exams included",
+          "Rapid skill development",
+          "Guaranteed improvement",
+          "Certificate of completion"
+        ],
+        "isPopular": false,
+        "order": 3
+      }
+    ]
+  },
+  "testimonials": {
+    "title": "Student Success Stories",
+    "subtitle": "Real results from real students across the UK",
+    "reviews": [
+      {
+        "id": "sarah-m",
+        "name": "Sarah Matthews",
+        "role": "A-Level Student, London",
+        "content": "Thanks to the expert tutoring, I improved my English Literature grade from a C to an A*. The personalized approach really made the difference!",
+        "rating": 5,
+        "image": "/placeholder-user.jpg",
+        "order": 1
+      },
+      {
+        "id": "james-t",
+        "name": "James Thompson",
+        "role": "GCSE Student, Manchester",
+        "content": "The 11+ preparation was fantastic. My son gained confidence and achieved the scores needed for his dream school. Highly recommended!",
+        "rating": 5,
+        "image": "/placeholder-user.jpg",
+        "order": 2
+      },
+      {
+        "id": "emma-w",
+        "name": "Emma Wilson",
+        "role": "University Applicant, Birmingham",
+        "content": "The personal statement guidance was invaluable. I received offers from all five universities I applied to, including my first choice!",
+        "rating": 5,
+        "image": "/placeholder-user.jpg",
+        "order": 3
+      }
+    ]
+  },
+  "contact": {
+    "title": "Start Your English Journey Today",
+    "subtitle": "Ready to unlock your potential? Get in touch for a free consultation and discover how we can help you achieve your academic goals.",
+    "email": "hello@wordandwonder.co.uk",
+    "phone": "+44 7123 456789",
+    "location": "Online & Home Visits (Greater London)",
+    "hours": "Monday - Saturday: 9:00 AM - 8:00 PM"
+  },
+  "navigation": {
+    "logo": "/word-and-wonder-logo.svg",
+    "menuItems": [
+      {
+        "id": "about",
+        "label": "About",
+        "href": "#about",
+        "order": 1
+      },
+      {
+        "id": "services",
+        "label": "Services",
+        "href": "#services",
+        "order": 2
+      },
+      {
+        "id": "pricing",
+        "label": "Pricing",
+        "href": "#pricing",
+        "order": 3
+      },
+      {
+        "id": "testimonials",
+        "label": "Reviews",
+        "href": "#testimonials",
+        "order": 4
+      },
+      {
+        "id": "contact",
+        "label": "Contact",
+        "href": "#contact",
+        "order": 5
+      }
+    ]
+  },
+  "footer": {
+    "description": "Word & Wonder English Tutoring - Empowering UK students to achieve academic excellence through personalised English instruction.",
+    "socialLinks": [
+      {
+        "id": "facebook",
+        "platform": "Facebook",
+        "url": "https://facebook.com/wordandwonder",
+        "icon": "Facebook"
+      },
+      {
+        "id": "twitter",
+        "platform": "Twitter",
+        "url": "https://twitter.com/wordandwonder",
+        "icon": "Twitter"
+      },
+      {
+        "id": "linkedin",
+        "platform": "LinkedIn",
+        "url": "https://linkedin.com/company/wordandwonder",
+        "icon": "LinkedIn"
+      }
+    ]
+  }
+}
