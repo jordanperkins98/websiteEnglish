@@ -12,6 +12,8 @@ const nextConfig = {
   output: 'export',
   trailingSlash: true,
   skipTrailingSlashRedirect: true,
+  basePath: '/websiteEnglish',
+  assetPrefix: '/websiteEnglish',
 }
 
 export default nextConfig
