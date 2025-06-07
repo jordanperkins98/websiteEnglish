@@ -34,6 +34,15 @@ cp next.config.static.mjs next.config.mjs
 echo "📦 Temporarily excluding server-side functionality..."
 mv app/api app/api.temp 2>/dev/null || true
 mv app/admin app/admin.temp 2>/dev/null || true
+mv app/actions.ts app/actions.ts.temp 2>/dev/null || true
+
+# Create a placeholder actions file for static build
+cat > app/actions.ts << 'EOF'
+// Placeholder for static build - Server Actions removed
+export function submitContactForm() {
+  return { success: false, message: "Contact form disabled in static build" }
+}
+EOF
 
 # Build the static site
 npm run build:static
@@ -44,6 +53,9 @@ build_result=$?
 echo "🔄 Restoring server-side functionality..."
 mv app/api.temp app/api 2>/dev/null || true
 mv app/admin.temp app/admin 2>/dev/null || true
+mv app/actions.ts.temp app/actions.ts 2>/dev/null || true
+rm -f app/actions.ts 2>/dev/null || true  # Remove placeholder
+mv app/actions.ts.temp app/actions.ts 2>/dev/null || true
 
 if [ $build_result -ne 0 ]; then
     echo "❌ Build failed!"
