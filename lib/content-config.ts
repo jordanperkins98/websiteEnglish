@@ -303,7 +303,7 @@ export const defaultContent: SiteContent = {
     hours: "Monday - Saturday: 9:00 AM - 8:00 PM"
   },
   navigation: {
-    logo: "/word-and-wonder-logo.svg",
+    logo: "/websiteEnglish/word-and-wonder-logo.svg",
     menuItems: [
       { id: "about", label: "About", href: "#about", order: 1 },
       { id: "services", label: "Services", href: "#services", order: 2 },
